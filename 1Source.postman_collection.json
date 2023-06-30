@@ -1,0 +1,1053 @@
+{
+	"info": {
+		"_postman_id": "f0c7bfb0-0c52-45e0-ad5c-77d2c82c5c47",
+		"name": "1Source",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13572240",
+		"_collection_link": "https://planetary-capsule-10656.postman.co/workspace/1Source~f777e135-749f-4d78-918b-dc0fd01320b4/collection/13572240-f0c7bfb0-0c52-45e0-ad5c-77d2c82c5c47?action=share&creator=13572240&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Parties",
+			"item": [
+				{
+					"name": "GET 1Source Borrower Parties",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/parties",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"parties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET 1Source Lender Parties",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Lender_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/parties",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"parties"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "Get 1Source Borrower Events",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/events",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Borrower Events with Auth",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Bearer_Token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/events",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Lender Events",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Lender_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/events",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agreements",
+			"item": [
+				{
+					"name": "Get 1Source Borrower Agreements",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/agreements",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"agreements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Borrower Agreement By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/agreements/{{agreementId}}",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"agreements",
+								"{{agreementId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Borrower Agreement By ID Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/agreements/40d202ff-70d7-4373-9a79-9d6eddb49a77",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"agreements",
+								"40d202ff-70d7-4373-9a79-9d6eddb49a77"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Lender Agreements",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Lender_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/agreements",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"agreements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Lender Agreement By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Lender_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/agreements/{{agreementId}}",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"agreements",
+								"{{agreementId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contracts",
+			"item": [
+				{
+					"name": "Get 1Source Borrower Contracts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Borrower Contract By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts/{{contractId}}",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts",
+								"{{contractId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Lender Contracts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Lender_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1Source Lender Contract By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Lender_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts/{{contractId}}",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts",
+								"{{contractId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post 1Source Borrower Approve Contract",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Borrower_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts/{{contractId}}/approve",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts",
+								"{{contractId}}",
+								"approve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post 1Source Borrower Decline Contract",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRib3Jyb3dlciIsIm5hbWUiOiJUb3AgQm9ycm93ZXIiLCJwYXJ0eUlkIjoiVEItVVNDTyJ9.hfTw2J5qY1WVZ_gRRec9xAUQbTpcxZ0wChswv8wyHgo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts/{{contractId}}/decline",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts",
+								"{{contractId}}",
+								"decline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post 1Source Lender Create Contract",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Lender_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"trade\" : \r\n    {{trade}}\r\n}"
+						},
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post 1Source Lender Cancel Contract",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRsZW5kZXIiLCJuYW1lIjoiVG9wIExlbmRlciIsInBhcnR5SWQiOiJUTC1VU0xMQyJ9.k04vQlUtwNQKKJ1R-2XLwZZfkDQqOTI_5VdJwgvODXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Ledger_API_Root}}/contracts/{{contractId}}/cancel",
+							"host": [
+								"{{1Source_Ledger_API_Root}}"
+							],
+							"path": [
+								"contracts",
+								"{{contractId}}",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Borrower Acquire Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Client_Secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "IntegrationTestClient",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "msuser1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "d8Yb0uN28trE",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "a14ca593-81e9-4a44-9e0d-b54994250bdc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{1Source_Auth_URL}}/protocol/openid-connect/token",
+							"host": [
+								"{{1Source_Auth_URL}}"
+							],
+							"path": [
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lender Acquire Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Client_Secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "canton-participant2-client",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "testlender1user",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "fjmxVeKzpzUDg3YJ",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "9fa094bf-9e39-4271-aa63-c6a641730423",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{1Source_Auth_URL}}/protocol/openid-connect/token",
+							"host": [
+								"{{1Source_Auth_URL}}"
+							],
+							"path": [
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lender Create Contract Proposal with Auth Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let resourceUri = pm.response.json().resourceUri\r",
+									"pm.environment.set(\"__loan_id\", resourceUri.split('/')[4])"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Bearer_Token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"trade\" : \r\n    {{trade}}\r\n}"
+						},
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/contracts",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lender Create Contract Proposal with Auth Token Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let resourceUri = pm.response.json().resourceUri\r",
+									"pm.environment.set(\"__loan_id\", resourceUri.split('/')[4])"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Bearer_Token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"trade\" : \r\n    {{trade}}\r\n}"
+						},
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/contracts",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrower Get Events with Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/events",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrower Get Parties with Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/parties",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"parties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrower Get Trade Agreements with Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/agreements",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"agreements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lender Get Events with Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/events",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lender Get Parties with Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/parties",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"parties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lender Get Trade Agreements with Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/agreements",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"agreements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lender Get Trade Agreement by ID with Auth Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Bearer_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1Source_Staging_URL}}/agreements/{{agreementId}}",
+							"host": [
+								"{{1Source_Staging_URL}}"
+							],
+							"path": [
+								"agreements",
+								"{{agreementId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "1Source_Ledger_API_Root",
+			"value": "http://demoapi.1sourceeq.com/v1/ledger"
+		},
+		{
+			"key": "Borrower_Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRib3Jyb3dlciIsIm5hbWUiOiJUb3AgQm9ycm93ZXIiLCJwYXJ0eUlkIjoiVEItVVNDTyJ9.hfTw2J5qY1WVZ_gRRec9xAUQbTpcxZ0wChswv8wyHgo",
+			"type": "string"
+		},
+		{
+			"key": "Lender_Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRsZW5kZXIiLCJuYW1lIjoiVG9wIExlbmRlciIsInBhcnR5SWQiOiJUTC1VU0xMQyJ9.k04vQlUtwNQKKJ1R-2XLwZZfkDQqOTI_5VdJwgvODXQ",
+			"type": "string"
+		},
+		{
+			"key": "1Source_URL",
+			"value": "http://demoapi.1sourceeq.com",
+			"type": "string"
+		},
+		{
+			"key": "1Source_Auth_URL",
+			"value": "https://stageauth.equilend.com/auth/realms/1Source",
+			"type": "string"
+		},
+		{
+			"key": "1Source_Staging_URL",
+			"value": "https://stageapi.equilend.com/v1/ledger",
+			"type": "string"
+		},
+		{
+			"key": "Client_Id",
+			"value": "Postman_Client",
+			"type": "string"
+		},
+		{
+			"key": "Username",
+			"value": "bnyuser1",
+			"type": "string"
+		},
+		{
+			"key": "Password",
+			"value": "s5hsZZnPh0G9",
+			"type": "string"
+		},
+		{
+			"key": "Grant_Type",
+			"value": "password",
+			"type": "string"
+		},
+		{
+			"key": "Bearer_Token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
