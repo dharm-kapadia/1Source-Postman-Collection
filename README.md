@@ -1,7 +1,7 @@
 # 1Source API Postman and Insomnia Collections
 > This repository contains API endpoints from the 1Source REST API for
-    * [Postman](https://www.postman.com)
-    * [Insomnia](https://insomnia.rest/)
+- [Postman](https://www.postman.com)
+- [Insomnia](https://insomnia.rest/)
 
 ## Development setup
 
